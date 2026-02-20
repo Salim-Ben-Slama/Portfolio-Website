@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  color-scheme: light;
+  
+
+
 }
 
 .App-logo {
@@ -36,7 +40,9 @@
     transform: rotate(360deg);
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .select-lang{
   
   display: inline-flex;
@@ -95,8 +101,8 @@
 
 .intro{
   background-color: #ffffff;
-  background-image: linear-gradient(-45deg, #ffffff7a, #ffffff7a 50%, #f5f5f57a 50%, #f5f5f57a);
-  background-size: 90px 90px;
+  background-image: linear-gradient(-45deg, #ffffff99, #ffffff99 50%, #f7f7f799 50%,#f7f7f799);
+  background-size: 100px 100px;
   width: -webkit-fill-available;
   min-height: 100vh;
   padding: 0 185px 0 260px;
@@ -105,12 +111,12 @@
 }
 
 .portfolio{
-  box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 3px 30px rgba(0, 0, 0, 0.08), inset 0 -3px 30px rgba(0, 0, 0, 0.08);
   border: 1px solid #ECECEC;
 
 }
 
-.portfolio-title{
+.portfolio-title,.abouMeSec-title{
   width: max-content;
   font-size: 44px;
   font-weight: 600;
@@ -125,4 +131,221 @@
   display: inline-flex;
   gap: 40px;
   font-size: 18px;
+  list-style-type: none;
+  
+}
+
+.po-menu li{
+  padding: 0 6px 4px 6px;
+  text-decoration: none;
+  background-image: linear-gradient(60deg, #00DDFF, #7255FD);
+  background-position: 50% 100% ;
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  cursor: pointer;
+}
+
+.po-menu li:hover{
+  background-size: 20% 3px;
+}
+
+.Pactive{
+  background-size: 100% 3px !important;
+}
+
+.web-card{
+  height: fit-content;
+  border: 1px solid #70707020;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;}
+.web-card *{
+  margin: 0;
+  padding: 0;
+}
+
+.github-btn, .demo-btn{
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.github-btn{
+  border: 1px solid #0000001A;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.demo-btn{
+  background-image: linear-gradient(60deg, #00DDFF, #7255FD);
+  color: #fff;
+}
+
+
+
+
+.aboutMe{
+  background-color: #ffffff;
+  background-image: linear-gradient(-45deg,  #ffffff, #ffffff 50%, #f7f7f777 50%,#f7f7f777);
+  background-size: 110px 110px;
+}
+.aboutMe_card{
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  padding: 25px 20px;
+  border: 1px solid #70707020;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  gap: 25px;
+  background-color: #fff;
+}
+
+.skills_list{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.skill{
+    display: inline-flex;
+    gap: 2px;
+    margin-left: 10px;
+}
+.skill *{
+  font-size: 16px;
+  margin: 2px;
+}
+.skill h6{
+  font-weight: 600;
+}
+
+
+.abouMeSec-title{
+  margin-bottom: 10px;
+}
+
+.sideNav{
+  position: fixed;
+  left: 10px;
+  top: 52%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.sideNav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 3px;
+}
+
+.sideNav .line {
+  position: absolute;
+  left: 8px;
+  top: -20px;
+  bottom: -20px;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.sideNav ul li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: color 0.3s ease;
+}
+
+.sideNav .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #cfcfcf;
+  background: #fff;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.sideNav li.active a {
+  color: #658EFF; /* blue */
+  font-weight: 600;
+  font-size: 17px;
+
+}
+
+.sideNav li.active .dot {
+  width: 15px;
+  height: 15px;
+  border: 5px solid #658EFF;
+  box-shadow: 0 0 3px 5px rgba(59,130,246,0.15);
+  margin-left: -2px;
+    transition:
+    border 0.3s linear,
+    box-shadow 0.4s ease,
+    width 0.3s ease,
+    height 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* HOVER */
+.sideNav a:hover {
+  color: #658EFF;
+}
+
+.afterCirc{
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-self: center;
+  justify-self: anchor-center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+.Bef-Aft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  padding: 8px 0;
+  margin: 0 20px;
+  border-radius: 20px;
+  background-color: #658EFF;
+  color: #fff;
+}
+
+.graph-card{
+  height: fit-content;
+  border: 1px solid #70707020;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 30px 50px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  justify-self: center;
 }
