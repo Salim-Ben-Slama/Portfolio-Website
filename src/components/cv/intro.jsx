@@ -10,7 +10,7 @@ const Intro=()=>{
                 <p style={{fontSize:"36px", margin:"0 0 17px 0"}}>With High Skills</p>
                 <p style={{fontSize:"16px",margin:"0"}}>I seek to push the limits of creativity to create high engaging, <br/>user friendly, and memoriable interatcive experiences.</p>
             </div>
-            <img src={PersPic} alt="personal picture" style={{height:"450px"}}/>
+            <img src={PersPic} alt="personal" style={{height:"450px"}}/>
         </div>
 
     )
