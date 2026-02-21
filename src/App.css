@@ -345,7 +345,7 @@ html{
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 9px;
   text-align: center;
   justify-self: center;
 }
