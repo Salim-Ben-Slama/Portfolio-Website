@@ -5,7 +5,7 @@ const Navbar=()=>{
         <div className="top-navbar">
             <h1 style={{fontSize:"30px",fontFamily:"Dancing Script"}}>Salim Ben Slama</h1>
             <div style={{display:"inline-flex",gap:"30px",alignItems:"center",float:"right"}}>
-                <p style={{textDecoration:"underline"}}>Download CV</p>
+                <a className="DownloadCv" href="https://salimbenslama.vercel.app/files/CV - Salim Ben Slama [EN].pdf" download>Download CV</a>
                 <div className="contact-btn">
                     <p>Contact</p>
                 </div>
