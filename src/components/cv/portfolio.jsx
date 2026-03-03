@@ -1,5 +1,6 @@
 import WebDevProjects from "./portfolio/webDevProjects.jsx";
 import GraphicDesignProjects from "./portfolio/graphicDesignProjects.jsx";
+import IotProjects from "./portfolio/iotProjects.jsx";
 import React from "react";
 import { useState } from "react";
 
@@ -23,6 +24,7 @@ const Portfolio=()=>{
             <div>
                 {Pactive === "Web Development" && <WebDevProjects />}
                 {Pactive === "IA Projects" && <></>}
+                {Pactive === "IoT Projects" && <IotProjects/>}
                 {Pactive === "Graphic Design" && <GraphicDesignProjects />}
 
             </div>
