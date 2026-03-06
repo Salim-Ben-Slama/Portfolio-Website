@@ -1,10 +1,11 @@
 import WebDevProjects from "./portfolio/webDevProjects.jsx";
+import IaMl from "./portfolio/iaMl.jsx";
 import GraphicDesignProjects from "./portfolio/graphicDesignProjects.jsx";
 import IotProjects from "./portfolio/iotProjects.jsx";
 import React from "react";
 import { useState } from "react";
 
-const Psections=['Web Development','IA Projects','IoT Projects','Graphic Design'];
+const Psections=['Web Development','IA & ML','IoT Projects','Graphic Design'];
 
 const Portfolio=()=>{
     const [Pactive,setPactive]=useState('Web Development')
@@ -22,8 +23,8 @@ const Portfolio=()=>{
                 </ul>
             </div>
             <div>
-                {Pactive === "Web Development" && <WebDevProjects />}
-                {Pactive === "IA Projects" && <></>}
+                {Pactive === "Web Development" && <WebDevProjects/>}
+                {Pactive === "IA & ML" && <IaMl/>}
                 {Pactive === "IoT Projects" && <IotProjects/>}
                 {Pactive === "Graphic Design" && <GraphicDesignProjects />}
 
