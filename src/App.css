@@ -162,7 +162,8 @@ html{
 }
 
 .demo-btn{
-  background-image: linear-gradient(60deg, #00DDFF, #7255FD);
+  
+  background-image: linear-gradient(60deg, #00ddff, #7255FD);
   color: #fff;
   
   
@@ -172,6 +173,16 @@ html{
 }
 .github-btn:hover{
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.blocked{
+  background-image: linear-gradient(60deg, #00ddffb0, #7255FDb0);
+  color: #ffffffb0;
+  background-color: #000;
+  cursor: auto;
+}
+.blocked:hover{
+  box-shadow: none;
 }
 
 

@@ -1,6 +1,8 @@
 import Rent from '../../assests/rent.png';
 import CallCenterLandingP from '../../assests/CallCenterLandingP.png'
 import Cv_website from '../../assests/cv_website.png'
+import { HiOutlineLockClosed } from "react-icons/hi";
+
 const WebDevProjects=()=>{
     return(
         <div>
@@ -13,7 +15,7 @@ const WebDevProjects=()=>{
                     </div>                    
                     <div>
                         <a href="https://github.com/Salim-Ben-Slama/House_rental_platform" target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
-                        <div className="demo-btn">Demo</div>
+                        <div className="demo-btn blocked">Demo <HiOutlineLockClosed style={{marginLeft:'5px'}}/></div>
                     </div>
                 </div>
 
@@ -25,7 +27,7 @@ const WebDevProjects=()=>{
                     </div>                    
                     <div>
                     <a href="https://github.com/Salim-Ben-Slama/Portfolio-Website" target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
-                        <div className="demo-btn">Demo</div>
+                        <div className="demo-btn blocked">Demo <HiOutlineLockClosed style={{marginLeft:'5px'}}/></div>
                     </div>
                 </div>
 
@@ -37,7 +39,7 @@ const WebDevProjects=()=>{
                     </div>                    
                     <div>
                         <div className="github-btn">GitHub</div>
-                        <div className="demo-btn">Demo</div>
+                        <div className="demo-btn blocked">Demo <HiOutlineLockClosed style={{marginLeft:'5px'}}/></div>
                     </div>
                 </div>
             </div>
