@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   color-scheme: light;
+  font-family: 'Open Sans';
 }
 
 html{
@@ -175,7 +176,7 @@ html{
 
 .aboutMe{
   background-color: #ffffff;
-  background-image: linear-gradient(-45deg,  #ffffff, #ffffff 50%, #f7f7f777 50%,#f7f7f777);
+  background-image: linear-gradient(-45deg,  #ffffff, #ffffff 50%, #f7f7f765 50%,#f7f7f765);
   background-size: 110px 110px;
 }
 .aboutMe_card{
