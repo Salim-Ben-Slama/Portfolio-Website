@@ -12,7 +12,7 @@ const WebDevProjects=()=>{
                         <p style={{fontSize:"14px"}}>A full-featured web application for renting and selling houses and lands. Includes an admin panel for property management, owner dashboards, interactive map filtering, user authentication, and virtual tours. <br/><span style={{fontWeight:"600"}}>Built with React, Node.js, Express, and PostgreSQL.</span></p>
                     </div>                    
                     <div>
-                        <div className="github-btn">GitHub</div>
+                        <a href="https://github.com/Salim-Ben-Slama/House_rental_platform" target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
                         <div className="demo-btn">Demo</div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const WebDevProjects=()=>{
                         <p style={{fontSize:"14px"}}>Designed and implemented a professional portfolio website to highlight development projects and skills. Includes structured sections for projects, education, and technical abilities.<br/><span style={{fontWeight:"600"}}>Built with React.js</span></p>
                     </div>                    
                     <div>
-                        <div className="github-btn">GitHub</div>
+                    <a href="https://github.com/Salim-Ben-Slama/Portfolio-Website" target="_blank" rel="noopener noreferrer" className="github-btn">GitHub</a>
                         <div className="demo-btn">Demo</div>
                     </div>
                 </div>

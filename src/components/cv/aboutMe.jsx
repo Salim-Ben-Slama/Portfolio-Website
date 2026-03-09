@@ -15,7 +15,7 @@ const AboutMe=()=>{
                                 <h6>• Backend:</h6> <p>Node.js, Express.js</p>
                             </div>
                             <div className="skill">
-                                <h6>• Databases:</h6> <p>MongoDB, MySQL</p>
+                                <h6>• Databases:</h6> <p>PostgreSQL, MySQL</p>
                             </div>
                             <div className="skill">
                                 <h6>• Programming Languages:</h6> <p>Python, Java, JavaScript</p>
